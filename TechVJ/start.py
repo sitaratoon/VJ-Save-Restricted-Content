@@ -68,7 +68,13 @@ async def send_start(client: Client, message: Message):
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
         chat_id=message.chat.id, 
-        text=f"<b>👋 Hi {message.from_user.mention}, I am Save Restricted Content Bot, I can send you restricted content by its post link.\n\nFor downloading restricted content /login first.\n\nKnow how to use bot by - /help</b>", 
+        text=f"<b>👋 Hi {message.from_user.mention}, I am Save Restricted Content Bot, I can send you restricted content by its post link.\n\nFor downloading restricted content /login first.\n\nKnow how to use bot by - /help 
+        
+        ‼️Note‼️
+
+don't use main account
+
+Tum log jis bhi number se login kar rahe vo number vala account jo channel ka content le rahe ho use me join rahane chahiye tab bot work karega 👍</b>", 
         reply_markup=reply_markup, 
         reply_to_message_id=message.id
     )
